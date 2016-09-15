@@ -1,0 +1,397 @@
+/* line 4, page.sass */
+#banner {
+  position: relative;
+  height: 540px;
+}
+/* line 8, page.sass */
+#banner > img {
+  position: relative;
+}
+/* line 11, page.sass */
+#banner > div {
+  position: absolute;
+  width: 100%;
+  height: 540px;
+}
+
+/* line 16, page.sass */
+.container {
+  position: relative;
+}
+
+/* line 19, page.sass */
+#ascensor_menu {
+  position: fixed;
+  right: 5em;
+  top: 50%;
+  z-index: 99;
+}
+
+/* line 27, page.sass */
+#ascensor_menu ul {
+  transition: all 0.2s ease-in-out;
+}
+/* line 30, page.sass */
+#ascensor_menu ul:hover, #ascensor_menu ul :active, #ascensor_menu ul :focus {
+  display: inline-block !important;
+  transition: all 0.2s ease-in-out;
+}
+/* line 34, page.sass */
+#ascensor_menu button {
+  transition: all 0.2s ease-in-out;
+}
+/* line 37, page.sass */
+#ascensor_menu button:hover, #ascensor_menu button :active, #ascensor_menu button :focus {
+  transform: scale(1.3);
+}
+/* line 40, page.sass */
+#ascensor_menu button:hover ~ ul, #ascensor_menu button :active ~ ul, #ascensor_menu button :focus ~ ul {
+  display: inline-block !important;
+}
+
+/* DETAILS */
+/* line 47, page.sass */
+#details h3 {
+  margin-top: 11px;
+  margin-bottom: 2em;
+}
+
+/* OPTIONS __________________ */
+/* line 53, page.sass */
+div#bubbles {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  padding-bottom: 50%;
+}
+/* line 59, page.sass */
+div#bubbles > div {
+  position: absolute;
+  width: 8em;
+  height: 8em;
+}
+/* line 64, page.sass */
+div#bubbles > div > div {
+  position: absolute;
+  top: 40%;
+}
+/* line 68, page.sass */
+div#bubbles > div > div > i {
+  top: -0.5em;
+  font-size: 3em;
+  left: 1.02em;
+}
+/* line 73, page.sass */
+div#bubbles > div > div > p {
+  width: 8em;
+  white-space: normal;
+  text-transform: none;
+}
+
+/* line 81, page.sass */
+div#bubbles > div > div > span {
+  display: none;
+}
+
+/* line 84, page.sass */
+div.arrows {
+  top: 209px;
+  left: 208px;
+  position: absolute;
+  width: 27%;
+  padding-bottom: 27%;
+}
+
+/* line 91, page.sass */
+div#bubbles > div, div.arrows > div {
+  position: absolute;
+}
+/* line 94, page.sass */
+div#bubbles > div:nth-child(1), div.arrows > div:nth-child(1) {
+  left: 100%;
+  top: 50%;
+  background-color: #ce3563;
+}
+/* line 98, page.sass */
+div#bubbles > div:nth-child(1):hover, div.arrows > div:nth-child(1):hover {
+  background-color: #9c2146;
+}
+/* line 101, page.sass */
+div#bubbles > div:nth-child(2), div.arrows > div:nth-child(2) {
+  left: 81%;
+  top: 89%;
+  background-color: #E6C53B;
+}
+/* line 105, page.sass */
+div#bubbles > div:nth-child(2):hover, div.arrows > div:nth-child(2):hover {
+  background-color: #AE9425;
+}
+/* line 108, page.sass */
+div#bubbles > div:nth-child(3), div.arrows > div:nth-child(3) {
+  left: 39%;
+  top: 98%;
+  background-color: #25558a;
+}
+/* line 112, page.sass */
+div#bubbles > div:nth-child(3):hover, div.arrows > div:nth-child(3):hover {
+  background-color: #1f4672;
+}
+/* line 115, page.sass */
+div#bubbles > div:nth-child(4), div.arrows > div:nth-child(4) {
+  left: 5%;
+  top: 71%;
+  background-color: #D3592C;
+}
+/* line 119, page.sass */
+div#bubbles > div:nth-child(4):hover, div.arrows > div:nth-child(4):hover {
+  background-color: #AE4A25;
+}
+/* line 122, page.sass */
+div#bubbles > div:nth-child(5), div.arrows > div:nth-child(5) {
+  left: 5%;
+  top: 29%;
+  background-color: #1e925d;
+}
+/* line 126, page.sass */
+div#bubbles > div:nth-child(5):hover, div.arrows > div:nth-child(5):hover {
+  background-color: #1a791b;
+}
+/* line 129, page.sass */
+div#bubbles > div:nth-child(6), div.arrows > div:nth-child(6) {
+  left: 39%;
+  top: 2%;
+  background-color: #d3912c;
+}
+/* line 133, page.sass */
+div#bubbles > div:nth-child(6):hover, div.arrows > div:nth-child(6):hover {
+  background-color: #ae7825;
+}
+/* line 136, page.sass */
+div#bubbles > div:nth-child(7), div.arrows > div:nth-child(7) {
+  left: 81%;
+  top: 11%;
+  background-color: #422c92;
+}
+/* line 140, page.sass */
+div#bubbles > div:nth-child(7):hover, div.arrows > div:nth-child(7):hover {
+  background-color: #342579;
+}
+
+/* line 143, page.sass */
+div.arrows > div {
+  border-bottom: #c9c9c9 solid 31px;
+  border-right: #c9c9c9 solid 31px;
+  width: 3em;
+  height: 3em;
+  -moz-border-radius: 0 12px 8px 12px / 0 15px 8px 15px;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 12px 8px 12px / 0 15px 8px 15px;
+}
+/* line 150, page.sass */
+div.arrows > div > div {
+  margin-top: -4em;
+  margin-left: -10.35em;
+  width: 14.8em;
+  height: 2em;
+  background-color: #b8b8b8;
+  transform: rotate(45deg);
+  -moz-border-radius: 0px 266px 266px 0px / 0px 70px 70px 0px;
+  -webkit-border-radius: 0px 0px;
+  border-radius: 0px 266px 266px 0px / 0px 70px 70px 0px;
+}
+/* line 159, page.sass */
+div.arrows > div:nth-child(1) {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 161, page.sass */
+div.arrows > div:nth-child(2) {
+  -moz-transform: rotate(6.43deg);
+  -ms-transform: rotate(6.43deg);
+  -webkit-transform: rotate(6.43deg);
+  transform: rotate(6.43deg);
+}
+/* line 163, page.sass */
+div.arrows > div:nth-child(3) {
+  -moz-transform: rotate(57.86deg);
+  -ms-transform: rotate(57.86deg);
+  -webkit-transform: rotate(57.86deg);
+  transform: rotate(57.86deg);
+}
+/* line 165, page.sass */
+div.arrows > div:nth-child(4) {
+  -moz-transform: rotate(109.29deg);
+  -ms-transform: rotate(109.29deg);
+  -webkit-transform: rotate(109.29deg);
+  transform: rotate(109.29deg);
+}
+/* line 167, page.sass */
+div.arrows > div:nth-child(5) {
+  -moz-transform: rotate(160.71deg);
+  -ms-transform: rotate(160.71deg);
+  -webkit-transform: rotate(160.71deg);
+  transform: rotate(160.71deg);
+}
+/* line 169, page.sass */
+div.arrows > div:nth-child(6) {
+  -moz-transform: rotate(212.14deg);
+  -ms-transform: rotate(212.14deg);
+  -webkit-transform: rotate(212.14deg);
+  transform: rotate(212.14deg);
+}
+/* line 171, page.sass */
+div.arrows > div:nth-child(7) {
+  -moz-transform: rotate(263.57deg);
+  -ms-transform: rotate(263.57deg);
+  -webkit-transform: rotate(263.57deg);
+  transform: rotate(263.57deg);
+}
+
+/* line 174, page.sass */
+div.arrows.arrows_background > div {
+  border-bottom: #B0B0B0 solid 31px;
+  border-right: #B0B0B0 solid 31px;
+  width: 3.4em;
+  height: 3.4em;
+}
+/* line 180, page.sass */
+div.arrows.arrows_background > div > div {
+  margin-top: -4.3em;
+  margin-left: -10.65em;
+  width: 15.1em;
+  height: 2.3em;
+  background-color: #B0B0B0;
+}
+
+/* line 187, page.sass */
+div.arrows.arrows_thin {
+  top: 209px;
+  left: 209px;
+}
+/* line 191, page.sass */
+div.arrows.arrows_thin > div {
+  visibility: hidden;
+}
+/* line 194, page.sass */
+div.arrows.arrows_thin > div > div {
+  visibility: visible;
+  margin-top: -2.8em;
+  margin-left: -8.06em;
+  width: 10.8em;
+  height: 0.4em;
+  background-color: #9f9f9f;
+}
+
+/* PRICES __________________ */
+/* line 205, page.sass */
+#fare center > img {
+  position: relative;
+  margin-top: -24%;
+}
+/* line 209, page.sass */
+#fare .well {
+  background: #fff;
+  box-shadow: 0 0 0 0;
+  border: 0px;
+}
+/* line 214, page.sass */
+#fare .jumbotron {
+  background: #299f69;
+}
+/* line 218, page.sass */
+#fare .base-padding {
+  padding: 3% 0;
+}
+/* line 221, page.sass */
+#fare .well.pricing-table {
+  /*            padding: 3% */
+  background: #fff;
+  transition: all 0.6s ease-out;
+}
+/* line 227, page.sass */
+#fare .well.pricing-table:hover {
+  box-shadow: 0 5px 6px #444;
+  cursor: pointer;
+}
+/* line 232, page.sass */
+#fare .pricing-feature-list {
+  padding: 10%;
+  background: #444;
+  color: #eee;
+}
+/* line 237, page.sass */
+#fare .pricing-feature-list .list-group-item {
+  position: relative;
+  display: block;
+  padding: 13px 15px;
+  margin-bottom: -1px;
+  background-color: #444;
+  /* border: 1px solid #6B6B6B */
+  font-size: 15px;
+  border: 1px solid #444;
+  /* font-weight: 700 */
+  border-bottom: 1px solid #595353;
+}
+/* line 252, page.sass */
+#fare .pricing-table:first-child > .pricing-table-holder {
+  padding-top: 47px;
+}
+@media (max-width: 1200px) {
+  /* line 252, page.sass */
+  #fare .pricing-table:first-child > .pricing-table-holder {
+    padding-top: 57px;
+  }
+}
+/* line 257, page.sass */
+#fare .pricing-table > .pricing-table-holder {
+  background: #f9f9f9;
+  padding: 6%;
+}
+/* line 262, page.sass */
+#fare .price-table-button-holder a {
+  margin: 0;
+}
+/* line 265, page.sass */
+#fare .custom-button-group a {
+  margin-top: 0;
+}
+
+/* CONTACT _________________ */
+/* line 271, page.sass */
+#contact_panel h3 {
+  display: inline-block;
+}
+/* line 274, page.sass */
+#contact_panel h3:nth-child(2n+1) {
+  margin-right: 2em;
+}
+
+/* PAGE JOURNEY ARROWS  */
+/* line 278, page.sass */
+.page_journey {
+  display: none;
+  font-size: 3em;
+  position: fixed;
+  top: 48%;
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+/* line 286, page.sass */
+.page_journey:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/* line 289, page.sass */
+#page_journey_right {
+  right: 3em;
+}
+
+/* line 291, page.sass */
+#page_journey_left {
+  left: 3em;
+}

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les Ailés</title>
+    <link href="ressources/css/fonts.css" rel="stylesheet" type="text/css"/>
+    <link href="ressources/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="ressources/css/bootstrap-material-design.css" rel="stylesheet" type="text/css"/>
+    <link href="ressources/css/ripples.css" rel="stylesheet" type="text/css"/>
+    <link href="ressources/css/ie10-viewport-bug-workaround.css" rel="stylesheet" type="text/css"/>
+    <link href="ressources/css/page.css" rel="stylesheet" type="text/css"/>
+    <link href="ressources/css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="ressources/css/slick-theme.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="ressources/js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="ressources/js/jquery.ascensor.js"></script>
+    <script type="text/javascript" src="ressources/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="ressources/js/scrollmagic.js"></script>
+    <script type="text/javascript" src="ressources/js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="ressources/js/plugins/animation.gsap.js"></script>
+    <!-- <script type="text/javascript" src="ressources/js/require.js"></script> -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="ressources/js/html5shiv.js"></script>
+    <script type="text/javascript" src="ressources/js/html5shiv-printshiv.js"></script>
+    <script type="text/javascript" src="ressources/js/flexie.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="ressources/js/selectivizr.js"></script>
+    <![endif]-->
+    <!--<noscript><link rel="stylesheet" href="/path/to/fallback-styles.css" /></noscript>-->
+    <script type="text/javascript" src="ressources/js/ripples.js"></script>
+    <script type="text/javascript" src="ressources/js/material.js"></script>
+    <script type="text/javascript" src="ressources/js/polyfiller.js"></script>
+    <script type="text/javascript" src="ressources/js/bounce.js"></script>
+    <script type="text/javascript" src="ressources/js/page.js"></script>
+    <script type="text/javascript" src="ressources/js/skype_uri.js"></script>
+    <script type="text/javascript" src="ressources/js/slick.js"></script>
+  </head>
+  <body>
+    <div id="ascensor_menu">
+      <button class="primary-background-color navbar-toggle">
+        <span class="info-background-color icon-bar"></span>
+        <span class="info-background-color icon-bar"></span>
+        <span class="info-background-color icon-bar"></span>
+      </button>
+      <ul class="btn-group-vertical" role="group" aria-label="...">
+        <li class="btn-group" role="group" aria-label="..." ><a class="btn btn-raised btn-primary" href="#discover">Découverte</a></li>
+        <li class="btn-group" role="group" aria-label="..." ><a class="btn btn-raised" href="#base">L'offre de base</a></li>
+        <li class="btn-group" role="group" aria-label="..." ><a class="btn btn-raised" href="#options">Options</a></li>
+        <li class="btn-group" role="group" aria-label="..." ><a class="btn btn-raised" href="#fare">Tarifs</a></li>
+        <li class="btn-group" role="group" aria-label="..." ><a class="btn btn-raised" href="#details">Détails</a></li>
+        <li class="btn-group" role="group" aria-label="..." ><a class="btn btn-raised" href="#contact">Nous Contacter</a></li>
+      </ul>
+    </div>
+    <div id="ascensor">
+      <div id="discover" >
+        <div id="banner">
+          <div style="background-image: url('ressources/img/banner_fond.png')"></div>
+          <img id="banner_image" src="ressources/img/banner_wings.png" alt="Les Ailés">
+        </div>
+        <div class="container container-fluid">
+          <div class="jumbotron">
+            <h2>COMBIEN VOUS COÛTE UN SECTEUR VACANT ?</h2>
+            <hr>
+            <h3>Combien rapporte t il à votre concurrent ?</h3>
+            <p>
+              <br>
+              <br>
+              Imaginez... vous régler ce problème récurrent sur un simple coup de fil…
+              <br>
+              <br>
+              <br>
+              Que la situation soit soudaine ou prévisible, un secteur en veille pénalise fortement votre prévisionnel.<br>
+              <br>
+              Avec les Ailés, vous pouvez anticiper ce manque de chiffre d'affaires et la réorganisation de votre force de vente.<br>
+              <br>
+              Vous bénéficiez d'une équipe de délégués pharmaceutiques rompue aux techniques de vente. Ceci à tout moment et sur toute la France métropolitaine.<br>
+              <br>
+              Il vous suffit pour cela de confier à notre équipe de volants vos réassorts ou autres prestations proposées, simultanément avec ceux de nos laboratoires<br> déjà partenaires.<br>
+              <br>
+              Avec Les Ailés, vous optez pour la mutualisation des coûts de personnel volant. Offrez vous plusieurs volants pour le prix d'un seul grâce au partage des coûts.<br>
+              <br>
+              &nbsp;Vos clients eux-mêmes pratiquent la technique de regroupement pour leurs commandes, réagissez et montrez leur que vous faites face en toutes<br>
+              &nbsp;circonstances avec rapidité et efficacité.<br>
+              <br>
+              Cela vous paraît compliqué ? absurde ?<br>
+              <br>
+              Plus compliqué et absurde que la concurrence qui s'empare de vos clients de jours en jours ?<br>
+              <br>
+              Plus compliqué que le recrutement supplétif ?<br>
+              <br>
+              Plus absurde que des journées entières  sans chiffre d'affaires ?
+            </p>
+            <p><a class="btn btn-primary btn-lg" onclick="ascensorInstance.scrollToFloor('base');">En savoir Plus</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="base">
+        <div class="jumbotron primary-background-color1">
+          <div class="container text-center">
+           <h1 class="page-header">La Prestation de Base</h1>
+           <p class="lead">Ce que nous proposons, le mode d'emploi..</p>
+          </div>
+        </div>
+        <div class="container container-fluid">
+          <p>
+            Le réassort<br>
+            <br>
+            Notre délégué contacte le titulaire de l'officine ou le responsable des achats de la gamme concernée afin de fixer un rendez vous.<br>
+            <br>
+            Chaque intervention est accompagnée d'un bon de commande papier que vous nous fournissez, avec date, signature du donneur d'ordres et tampon de l'officine.<br>
+            Ils sont envoyés par courrier à votre service administration des ventes deux fois par semaine si l'option saisie informatique des commandes n'a pas été souscrite.<br>
+            <br>
+            Les conditions commerciales ainsi que les colisages sont respectés à la lettre selon vos recommandations.<br>
+            <br>
+            La mission est composée de 4 réassorts par jour, le choix des clients effectué selon vos critères d priorité.Elle s'effectue sur la base de 1 département par semaine.<br>
+            <br>
+            Un délai de 2 jours est fixé entre le moment où le secteur nous est confié et la prise de la 1ere commande, cela pour assurer un service de prise de rendez vous cohérent.<br>
+            <br>
+            Lors de la prise de rendez vous, il sera proposé 2 dates de visite. En cas d'absence de l'interlocuteur, il sera demandé à celui ci de définir  une personne en remplacement.<br>
+            <br>
+            En cas d'impossibilité de rencontre, les commandes urgentes peuvent exceptionnellement être prises par téléphone.<br>
+            <br>
+            Les ruptures de stock doivent nous être signalées ainsi que la gestion de leur réapprovisionnement ( reliquats,commandes additionnelles…)
+            <br>
+            Pour des raisons évidentes d'équité et d'impartialité, le réassort ne peut faire l'objet d'ouvertures de marchés.Pour ces mêmes raisons ,aucun objectif quantitatif en terme de chiffre d'affaires ne peut être demandé.<br>
+            <br>
+            Toute exception aux conditions commerciales sera assortie d'une demande auprès de vos services.<br>
+            <br>
+            La visite pourra être finalisée par une prise de rendez vous future pour faciliter la gestion du secteur par son responsable initial ou à venir ( en option )<br>
+            <br>
+            Chaque mission se déroule sur 4 semaines par secteur et peut être renouvelée 2 fois par an.<br>
+            Toutefois, vous pouvez choisir les options de prolongation de mission ou de renfort si vous estimez que  celles ci sont nécessaires.<br>
+            <br>
+            Pendant que nous prenons en charge l'urgence de la situation, vous pouvez recruter et former en toute quiétude un nouveau commercial ou organiser la reprise du secteur au délégué attitré.<br>
+            <br>
+            Chacun de nos employés est engagé par une clause de confidentialité très stricte envers tous nos clients et les vôtres.<br>
+          </p>
+        </div>
+      </div>
+      <div id="options">
+        <div class="jumbotron primary-background-color1">
+          <div class="container text-center">
+           <h1 class="page-header">Les Options</h1>
+           <p class="lead">En plus de notre prestation de base nous proposons plusieurs options complémentaires</p>
+          </div>
+        </div>
+        <div class="container container-fluid">
+          <div id="bubbles" class=" col-xs-offset-2">
+            <div class="btn btn-primary btn-fab">
+              <div>
+                <i class="material-icons option_icon">computer</i>
+                <p>Saisie Informatique</p>
+                <span>input</span>
+              </div>
+            </div>
+            <div class="btn btn-info btn-fab">
+              <div>
+                <i class="material-icons option_icon">assignment</i>
+                <p>Le Suivi de<br>Visite</p>
+                <span>followed</span>
+              </div>
+            </div>
+            <div class="btn btn-danger btn-fab">
+              <div>
+                <i class="material-icons option_icon">assistant_photo</i>
+                <p>Renforts de Visites</p>
+                <span>reinforce</span>
+              </div>
+            </div>
+            <div class="btn btn-success btn-fab">
+              <div>
+                <i class="material-icons option_icon">contact_phone</i>
+                <p>Prise de rdv téléphonique</p>
+                <span>meeting</span>
+              </div>
+            </div>
+            <div class="btn btn-warning btn-fab">
+              <div>
+                <i class="material-icons option_icon">phone_forwarded</i>
+                <p>Prise de réassorts tél.</p>
+                <span>refill</span>
+              </div>
+            </div>
+            <div class="btn btn-primary btn-fab purple-background-color3">
+              <div>
+                <i class="material-icons option_icon">assignment_turned_in</i>
+                <p>Gestion des périmés</p>
+                <span>outdated</span>
+              </div>
+            </div>
+            <div class="btn btn-primary btn-fab">
+              <div>
+                <i class="material-icons option_icon">trending_flat</i>
+                <p>Prolongation<br>de mission</p>
+                <span>extension</span>
+              </div>
+            </div>
+          </div>
+          <div class="arrows arrows_background col-xs-offset-2">
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div class="arrows col-xs-offset-2">
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div class="arrows arrows_thin col-xs-offset-2">
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="fare">
+        <div class="jumbotron">
+          <div class="container text-center">
+           <h1 class="page-header">Nos Tarifs</h1>
+           <p class="lead">Les tarifs varient selon leur durée, le plus long étant le plus avantageux..</p>
+          </div>
+        </div>
+        <div class="container">
+          <blockquote>
+            Pour des raisons évidentes de logistique, nous sommes appelés à faire des choix sur le nombre de partenaires à inclure à notre programme.<br>
+            <br>
+            Nous privilégions les laboratoires par ordre d'acceptation de partenariat et donnons <b>priorité aux souscriptions présentant le plus d'options sur une durée de 3 ans</b>.<br>
+            <br>
+            En vous remerciant de l'attention que vous portez à notre proposition, nous vous prions d'agréer, Madame,Monsieur, l'expression de nos salutations distinguées.
+          </blockquote>
+        </div>
+        <div class="container ">
+          <div class="row">
+
+            <div class="col-md-4 well pricing-table">
+              <div class="pricing-table-holder">
+                <center>
+                  <h3>Tarfis Annuel</h3>
+                  <p class="caption">
+                    &nbsp;
+                  </p>
+                </center>
+              </div>
+
+              <div class="pricing-feature-list">
+                <h4>Prestation de Base</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">120.000</li>
+                </ul>
+                <h4>Options</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Saisie Informatique<br>25.000</li>
+                  <li class="list-group-item">Prise de RDV Telephonique<br>25.000</li>
+                  <li class="list-group-item">Gestion Perimés<br>40.000</li>
+                  <li class="list-group-item">Commandes Telephoniques<br>40.000</li>
+                  <li class="list-group-item">Prolongation Mission<br>40.000</li>
+                  <li class="list-group-item">Renfort sur Secteur<br>60.000</li>
+                </ul>
+                <h4>Prestation toutes Options</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">315.000</li>
+                </ul>
+              </div>
+
+              <div class="price-table-button-holder">
+                <a href="#contact"  class="btn btn-raised btn-info btn-block">
+                  NOUS CONTACTER
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 well pricing-table">
+              <div class="pricing-table-holder">
+                <center>
+                  <img src="ressources/img/8p.png" class="img-responsive img-circle" alt="">
+                  <h3>Tarif Intermediaire</h3>
+                  <p class="caption">
+                    Pour une souscription de 2 ans
+                  </p>
+                </center>
+              </div>
+
+              <div class="pricing-feature-list">
+                <h4>Prestation de Base</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">220.000</li>
+                </ul>
+                <h4>Options</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Saisie Informatique<br>45.000</li>
+                  <li class="list-group-item">Prise de RDV Telephonique<br>45.000</li>
+                  <li class="list-group-item">Gestion Perimés<br>70.000</li>
+                  <li class="list-group-item">Commandes Telephoniques<br>70.000</li>
+                  <li class="list-group-item">Prolongation Mission<br>70.000</li>
+                  <li class="list-group-item">Renfort sur Secteur<br>105.000</li>
+                </ul>
+                <h4>Prestation toutes Options</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">560.000</li>
+                </ul>
+              </div>
+
+              <div class="price-table-button-holder">
+                <a href="#contact"  class="btn btn-raised btn-info btn-block">
+                  NOUS CONTACTER
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 well pricing-table">
+              <div class="pricing-table-holder">
+                <center>
+                  <img src="ressources/img/16p.png" class="img-responsive img-circle" alt="">
+                  <h3><b>Tarif Avantage</b></h3>
+                  <p class="caption">
+                    Pour une souscription de 3 ans
+                  </p>
+                </center>
+              </div>
+
+              <div class="custom-button-group" style="">
+
+                <div class="col-md-8 col-sm-9" style="padding:0;">
+                  <a href="#contact" class="btn btn-raised btn-primary btn-block" style="border-radius:0; margin-top: -1px; margin-left: -2px; width: 101%;">
+                    NOUS CONTACTER
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-3" style="padding:0;">
+                  <a href="#contact" class="btn btn-raised btn-info btn-block glyphicon glyphicon-earphone" style="border-radius:0;  margin-top: -2px;margin-left: 0px;margin-right: 0;width: 101%;" >
+                  </a>
+                </div>
+              </div>
+
+              <div class="pricing-feature-list">
+                <h4>Prestation de Base</h4>
+                <ul class="list-group">
+                  <li class="list-group-item"><b>300.000</b></li>
+                </ul>
+                <h4>Options</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Saisie Informatique<br><b><b>60.000</b></b></li>
+                  <li class="list-group-item">Prise de RDV Telephonique<br><b>60.000</b></li>
+                  <li class="list-group-item">Gestion Perimés<br><b>90.000</b></li>
+                  <li class="list-group-item">Commandes Telephoniques<br><b>90.000</b></li>
+                  <li class="list-group-item">Prolongation Mission<br><b>90.000</b></li>
+                  <li class="list-group-item">Renfort sur Secteur<br><b>135.000</b></li>
+                </ul>
+                <h4>Prestation toutes Options</h4>
+                <ul class="list-group">
+                  <li class="list-group-item"><b>740.000</b></li>
+                </ul>
+              </div>
+
+              <div class="price-table-button-holder">
+                <a href="#contact" class="btn btn-raised btn-info btn-block">
+                  NOUS CONTACTER
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="details">
+        <div class="jumbotron primary-background-color1">
+          <div class="container text-center">
+           <h1 class="page-header">Les Options en détail</h1>
+           <p class="lead">Toutes les options indispensables proposés en plus de la prestation de base ..</p>
+          </div>
+        </div>
+        <div class="container container-fluid">
+          <div id="input" class="well">
+            <i class="col-xs-1 material-icons option_icon">computer</i>
+            <h3 class="col-xs-11">La Saisie Informatique</h3>
+            <hr>
+            La saisie des réassorts peut être effectuée par nos soins afin d'être directement transmise à vos services administratifs.<br>
+            <br>
+            Elle est pour vous un gain de temps appréciable et vous apporte une vision des résultats en temps réel.<br>
+            <br>
+            Elle est opérationnelle à compter du 4eme jour de la prise en charge du secteur. Elle est réalisée par un préposé affecté à ce service.<br>
+            <br>
+            La transmission des saisies est journalières par synchronisation des données.<br>
+            <br>
+            Si cette option a été souscrite, les bons de commande papiers confirmés par le responsable de l'officine ou de son remplaçant seront archivés par nos soins pendant une durée de 6 mois pour éviter tout litige.<br>
+            <br>
+            Il vous est demandé de nous fournir le logiciel approprié ainsi que le service de maintenance inhérent à celui ci .<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+          <div id="followed" class="well">
+            <i class="col-xs-1 material-icons option_icon">assignment</i>
+            <h3 class="col-xs-11">Le Suivi de Visite</h3>
+            <hr>
+            Une prise de rendez vous à venir peut être également faite lors des visites de nos délégués.<br>
+            <br>
+            Elle facilite la reprise de votre délégué et optimise la réorganisation de votre secteur dans la prise en charge de celui ci par un nouveau commercial.<br>
+            <br>
+            Elle peut aussi être utilisée par nos services en cas de prolongation de la durée de la mission.<br>
+            <br>
+            La date du rendez vous est fixée en bas du bon de commande papier et validée par l'interlocuteur de la pharmacie.<br>
+            <br>
+            L'archivage et la gestion  des rendez vous sont à nos soins et vous sont transmis.<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+          <div id="reinforce" class="well">
+            <i class="col-xs-1 material-icons option_icon">assistant_photo</i>
+            <h3 class="col-xs-11">Les Renforts de Visites</h3>
+            <hr>
+            Selon vos critères de priorité, il peut y avoir une forte concentration de réassorts à accomplir sur un secteur restreint.<br>
+            <br>
+            Pour ne négliger aucun client important et laisser s'infiltrer la concurrence, nous assignons un de nos délégués en renfort sur ce secteur afin de réaliser  8 visites journalières.<br>
+            <br>
+            Les conditions habituelles de réalisation des visites sont respectées par le renfort  de la même manière que le délégué responsable du département.<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+          <div id="meeting" class="well">
+            <i class="col-xs-1 material-icons option_icon">contact_phone</i>
+            <h3 class="col-xs-11">La prise de rendez vous téléphonique</h3>
+            <hr>
+            Nous vous proposons cette option qui consiste uniquement à une prise de rendez vous téléphonique auprès des pharmacies.<br>
+            <br>
+            Elle permet, comme le suivi de visite, d’améliorer le réaménagement du secteur. Elle offre à votre délégué la possibilité de se concentrer sur ses visites pour un maximum de productivité.<br>
+            <br>
+            Cette alternative n'est pas assortie d'un service de visites , sauf si une mission nous est confiée entre-temps sur le lieu des rendez vous fixés.<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+          <div id="refill" class="well">
+            <i class="col-xs-1 material-icons option_icon">phone_forwarded</i>
+            <h3 class="col-xs-11">La prise de réassorts téléphonique</h3>
+            <hr>
+            Cette option vous est proposée en cas de demandes urgentes de vos clients mais également en complément de nos missions terrain.<br>
+            <br>
+            Elle peut vous permettre de palier à l'afflux de votre concurrence très courante sur un secteur vacant.<br>
+            <br>
+            Elle contribue aussi à conserver le contact ainsi que votre image auprès de vos clients, trop souvent malmenés sur un secteur inoccupé.<br>
+            <br>
+            Ce choix vous est conseillé pour gérer les réapprovisionnements des clients non ciblés dans vos priorités.<br>
+            <br>
+            La réalisation du réassort se fait selon les mêmes conditions commerciales qu'une visite traditionnelle. Elle est effectuée sur rendez vous téléphonique fixé par nos soins.<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+          <div id="outdated" class="well">
+            <i class="col-xs-1 material-icons option_icon">assignment_turned_in</i>
+            <h3 class="col-xs-11">La gestion des périmés</h3>
+            <hr>
+            La gestion des produits périmés et / ou détériorés peut être effectuée sur la base d'un chiffrage du montant global de ces produits prix tarif.<br>
+            <br>
+            Les conditions de reprise, abattements et avoirs restent à votre charge selon votre politique intérieure.<br>
+            <br>
+            La neutralisation des produits ( codes barres rayés, mise en destruction ) est faite dans l'officine.<br>
+            <br>
+            Cette opération fait l'objet d'un compte rendu précis signé et tamponné par le responsable présent  de la pharmacie.<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+          <div id="extension" class="well">
+            <i class="col-xs-1 material-icons option_icon">trending_flat</i>
+            <h3 class="col-xs-11">La prolongation de mission</h3>
+            <hr>
+            Si vous avez accepté cette close, la mission de 4 semaines par secteur peut être prolongée d'une seconde période de 4 semaines afin de  proposer nos services à un maximum de vos clients.<br>
+            <br>
+            Cette période de prolongation peut être renouvelée 1 fois par an par secteur.<br>
+            <br>
+            Elle se fait dans les mêmes conditions que la mission initiale.<br>
+            <button class="btn btn-raised btn-danger">Vous avez des questions? Contactez nous !</button>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <div class="jumbotron">
+          <div class="container text-center">
+           <h1 class="page-header">Nous contacter</h1>
+           <p class="lead">Le meilleur moyen d'en savoir plus, c'est de nous appeler..</p>
+          </div>
+        </div>
+        <div class="container container-fluid">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title"><b>Informations de contact</b></h3>
+            </div>
+            <div id="contact_panel" class="panel-body">
+              <div>
+                <h3 class="primary-color"><i class="material-icons" style="font-size: 1.5em;font-weight: bold;">phone</i>&nbsp;<a href="tel:+3365472514"><b>+3365472514</b> ( 06.65.47.25.16)</a></h3>
+                <h3 class="primary-color"><i class="material-icons" style="font-size: 1.5em;">email</i>&nbsp;<a href="mailto:contact@societe.com"><b>contact@societe.com</b></a></h3>
+                <h3 class="primary-color"><i class="material-icons" style="font-size: 1.5em;">location_city</i>&nbsp;Rue des lardons 88666 Hells Kitchen</h3>
+                <h3 class="primary-color"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;Skype<div style="display:inline-block;" id="SkypeButton_Call_JoeLaFrite_1"></div></h3>
+                <script type="text/javascript">
+                 Skype.ui({
+                 "name": "dropdown",
+                 "element": "SkypeButton_Call_JoeLaFrite_1",
+                 "participants": ["JoeLaFrite"],
+                 "imageSize": 32
+                 });
+                 </script>
+              </div>
+              <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.9577697739874!2d-89.21424329999999!3d48.457339800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d5923eaca84fa67%3A0xfd2f9f807114acd4!2s292+Shuniah+St%2C+Thunder+Bay%2C+ON+P7A+3A2!5e0!3m2!1sen!2sca!4v1424272931061" width=100% height="450" frameborder="0" style="border:0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page_journey_left" class="btn btn-primary page_journey glyphicon glyphicon-chevron-left"></div>
+    <div id="page_journey_right" class="btn btn-primary page_journey glyphicon glyphicon-chevron-right"></div>
+  </body>
+</html>

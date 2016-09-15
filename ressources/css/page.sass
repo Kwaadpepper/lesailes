@@ -1,0 +1,292 @@
+@import "compass/css3"
+@import "colors"
+
+#banner
+  position: relative
+  height: 540px
+
+  &> img
+    position: relative
+
+  &> div
+    position: absolute
+    width: 100%
+    height: 540px
+
+.container
+  position: relative
+
+#ascensor_menu
+  position: fixed
+  right: 5em
+  top: 50%
+  z-index: 99
+
+#ascensor_menu
+
+  ul
+
+    transition: all .2s ease-in-out
+    &:hover, :active, :focus
+      display: inline-block !important
+      transition: all .2s ease-in-out
+
+  button
+    transition: all .2s ease-in-out
+
+    &:hover, :active, :focus
+      transform: scale(1.3)
+
+      & ~ ul
+        display: inline-block !important
+
+
+/* DETAILS */
+
+#details
+  & h3
+    margin-top: 11px
+    margin-bottom: 2em
+
+/* OPTIONS __________________ */
+
+div#bubbles
+  top: 0
+  left: 0
+  position: absolute
+  width: 50%
+  padding-bottom: 50%
+  &> div
+    position: absolute
+    width: 8em
+    height: 8em
+
+    & > div
+      position: absolute
+      top: 40%
+
+      & > i
+        top: -0.5em
+        font-size: 3em
+        left: 1.02em
+
+      & > p
+        width: 8em
+        white-space: normal
+        text-transform: none
+
+$arrow_color: #636363
+$arrow_color_shadow: #B0B0B0
+
+div#bubbles > div > div > span
+  display: none
+
+div.arrows
+  top: 209px
+  left: 208px
+  position: absolute
+  width: 27%
+  padding-bottom: 27%
+
+div#bubbles > div, div.arrows > div
+  position: absolute
+  // 0 deg
+  &:nth-child(1)
+    left: 100%
+    top: 50%
+    background-color: $pink3
+    &:hover
+      background-color: $pink4
+  // 51.43 deg
+  &:nth-child(2)
+    left: 81%
+    top: 89%
+    background-color: $yellow3
+    &:hover
+      background-color: $yellow4
+  // 102.86 deg
+  &:nth-child(3)
+    left: 39%
+    top: 98%
+    background-color: $blue3
+    &:hover
+      background-color: $blue4
+  // 154.29 deg
+  &:nth-child(4)
+    left: 5%
+    top: 71%
+    background-color: $orange3
+    &:hover
+      background-color: $orange4
+  // 205.71 deg
+  &:nth-child(5)
+    left: 5%
+    top: 29%
+    background-color: $green3
+    &:hover
+      background-color: $green4
+  // 257.14 deg
+  &:nth-child(6)
+    left: 39%
+    top: 2%
+    background-color: $gold3
+    &:hover
+      background-color: $gold4
+  // 308.57 deg
+  &:nth-child(7)
+    left: 81%
+    top: 11%
+    background-color: $purple3
+    &:hover
+      background-color: $purple4
+
+div.arrows > div
+  border-bottom: $arrow_color + #666 solid 31px
+  border-right: $arrow_color + #666 solid 31px
+  width: 3em
+  height: 3em
+  @include border-radius(0 12px 8px 12px, 0 15px 8px 15px)
+
+  & > div
+    margin-top: -4em
+    margin-left: -10.35em
+    width: 14.8em
+    height: 2em
+    background-color: $arrow_color + #555
+    transform: rotate(45deg)
+    @include border-radius(0px 266px 266px 0px, 0px 70px 70px 0px)
+
+  &:nth-child(1)
+    @include rotate(-45deg)
+  &:nth-child(2)
+    @include rotate(6.43deg)
+  &:nth-child(3)
+    @include rotate(57.86deg)
+  &:nth-child(4)
+    @include rotate(109.29deg)
+  &:nth-child(5)
+    @include rotate(160.71deg)
+  &:nth-child(6)
+    @include rotate(212.14deg)
+  &:nth-child(7)
+    @include rotate(263.57deg)
+
+div.arrows.arrows_background > div
+  border-bottom: $arrow_color_shadow solid 31px
+  border-right: $arrow_color_shadow solid 31px
+  width: 3.4em
+  height: 3.4em
+
+  & > div
+    margin-top: -4.3em
+    margin-left: -10.65em
+    width: 15.1em
+    height: 2.3em
+    background-color: $arrow_color_shadow
+
+div.arrows.arrows_thin
+  top: 209px
+  left: 209px
+
+  &> div
+    visibility: hidden
+
+    & > div
+      visibility: visible
+      margin-top: -2.8em
+      margin-left: -8.06em
+      width: 10.8em
+      height: 0.4em
+      background-color: $arrow_color_shadow - #111
+
+/* PRICES __________________ */
+
+#fare
+  center > img
+    position: relative
+    margin-top: -24%
+
+  .well
+    background: #fff
+    box-shadow: 0 0 0 0
+    border: 0px
+
+  .jumbotron
+    background: $green2
+
+
+  .base-padding
+    padding: 3% 0
+
+  .well.pricing-table
+    /*            padding: 3%*/
+    background: #fff
+    transition: all 0.6s ease-out
+
+
+  .well.pricing-table:hover
+    box-shadow: 0 5px 6px #444
+    cursor: pointer
+
+
+  .pricing-feature-list
+    padding: 10%
+    background: #444
+    color: #eee
+
+  .pricing-feature-list .list-group-item
+    position: relative
+    display: block
+    padding: 13px 15px
+    margin-bottom: -1px
+    background-color: #444
+    /* border: 1px solid #6B6B6B */
+    font-size: 15px
+    border: 1px solid #444
+    /* font-weight: 700 */
+    border-bottom: 1px solid #595353
+
+  .pricing-table
+
+    &:first-child
+      & > .pricing-table-holder
+        padding-top: 47px
+        @media (max-width: 1200px)
+          padding-top: 57px
+
+    &>.pricing-table-holder
+      background: #f9f9f9
+      padding: 6%
+
+  .price-table-button-holder
+    a
+      margin: 0
+
+  .custom-button-group a
+    margin-top: 0
+
+
+/* CONTACT _________________ */
+
+#contact_panel h3
+  display: inline-block
+
+  &:nth-child(2n+1)
+    margin-right: 2em
+
+/* PAGE JOURNEY ARROWS  */
+.page_journey
+  display: none
+  font-size: 3em
+  position: fixed
+  top: 48%
+  cursor: pointer
+  @include opacity(0.3)
+
+  &:hover
+    @include opacity(1)
+
+#page_journey_right
+  right: 3em
+#page_journey_left
+  left: 3em
