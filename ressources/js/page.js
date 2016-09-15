@@ -19,14 +19,16 @@
     }));
     window.AileAscensor = $('#ascensor').ascensor({
       ascensorFloorName: ['discover', 'base', 'options', 'fare', 'details', 'contact'],
-      direction: [[2, 2], [1, 3], [2, 3], [3, 3], [3, 4], [2, 4]],
+      direction: [[2, 2], [1, 3], [2, 3], [3, 3], [2, 4], [3, 4]],
       ReturnURL: true,
       Time: 500,
       WindowsOn: 1,
       ChildType: 'section',
       Easing: 'easeOutQuad',
       jump: true,
-      loop: true,
+      loop: "increment",
+      wheelNavigation: true,
+      wheelNavigationDelay: 100,
       ready: function() {
         $('#ascensor_menu li a').removeClass('btn-primary');
         $('#ascensor_menu li a[href="' + window.location.hash + '"]').addClass('btn-primary');
